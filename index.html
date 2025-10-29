@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Practice Day-1</title>
+    <style>
+      div {
+        display: block;
+        height: 60vh;
+        margin: auto;
+        text-align: center;
+        align-self: center;
+        align-content: center;
+        font-family: "Inter", sans-serif;
+        text-align: center;
+        width: 60vw;
+        background: linear-gradient(
+          90deg,
+          rgba(255, 100, 100, 1) 0%,
+          rgba(255, 50, 150, 1) 24%,
+          rgba(255, 150, 80, 1) 50%,
+          rgba(120, 180, 255, 1) 76%,
+          rgba(250, 230, 100, 1) 100%
+        );
+        border-radius: 20px;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+        color: white;
+      }
+
+      span {
+        font-size: 2.9em;
+        font-weight: 800;
+        display: block;
+        margin-bottom: 20px;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+      }
+
+      i {
+        max-width: 80%;
+        text-shadow: 1px 1px 2px whitesmoke;
+        font-size: 2.8rem;
+        font-weight: 900;
+        font-style: normal;
+        background-color: #1a1a1a;
+        color: #fff8e1;
+        padding: 0.75rem 1.5rem;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.6) 0px 10px 20px -5px,
+          rgba(255, 255, 255, 0.2) 0px -2px 6px 0px inset;
+        text-decoration: none;
+        display: inline-block;
+      }
+      button {
+        margin: 2rem;
+        padding: 0.5rem 1rem;
+        font-weight: 600;
+        font-size: 1.7rem;
+        border: none;
+        background: black;
+        color: #fff8e1;
+        text-shadow: 2px 2px 3px black;
+        border-radius: 12px;
+        box-shadow: aqua 0px 10px 20px -5px;
+      }
+      a {
+        text-decoration: none;
+        color: Black;
+        background-color: bisque;
+        padding: 0.5rem 1rem;
+        font-size: 1.5rem;
+        box-shadow: aqua 0px 10px 20px -5px;
+        border-radius: 12px;
+        font-weight: 600;
+      }
+      /* 🌐  MOBILE RESPONSIVE DESIGN  */
+      @media screen and (max-width: 580px) {
+        body {
+          margin: 0;
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          height: 100vh;
+          background: #fafafa;
+        }
+
+        div {
+          width: 90vw;
+          height: auto;
+          padding: 2rem 1rem;
+          border-radius: 15px;
+          margin-top: 1.5rem;
+        }
+
+        span {
+          font-size: 2rem;
+          margin-bottom: 10px;
+        }
+
+        i {
+          font-size: 1.7rem;
+          padding: 0.5rem 1rem;
+          word-wrap: break-word;
+        }
+
+        /* 🔘 BUTTONS RESPONSIVE STYLE */
+        button,
+        a {
+          font-size: 1rem;
+          font-weight: bold;
+          padding: 0.6rem 1rem;
+          border-radius: 10px;
+          text-align: center;
+        }
+
+        /* ✅ BUTTONS SAME LINE */
+        button,
+        a {
+          display: inline-block;
+          margin: 10px 2%;
+        }
+
+        /* Container for both buttons */
+        body {
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- CLicked Button Action Perform Inline JS -->
+    <button
+      onclick="alert('Kyu Dabaya?'); console.log('✅ user clicked button'); document.write('<h1>✅ User Clicked Button</h1>');"
+    >
+      Click Alert Messege!
+    </button>
+
+    <a href="./code-view.html" target="_blank">Code Review</a>
+
+    <!-- JavaScript Linked -->
+    <script src="./script.js"></script>
+  </body>
+</html>
